@@ -456,7 +456,7 @@ if ($query_check->num_rows > 0) {
                         <p style="font-weight: bold;"><?php echo $row["prix"]; ?> DH</p>
                       </div>
                       <?php 
-                        if($_SESSION['id_client']){
+                        if(!isset($_SESSION['id_agence'])){
                           ?>
                           <div class="ml-auto price">
                               <span class="bg-primary">
